@@ -2,23 +2,19 @@
 
 
 
-[CreateAssetMenu(fileName = "Zombie Data", menuName = "Scriptable Object/Zombie Data", order = int.MaxValue)]
 
+[CreateAssetMenu(fileName = "ZombieDB", menuName = "Shader/Zombie Data", order = int.MaxValue)]
 public class ZombieData : ScriptableObject
-
 {
-
     [SerializeField]
-
     private string zombieName;
-
     public string ZombieName { get { return zombieName; } }
 
     [SerializeField]
-
     private int hp;
 
-    public int Hp { get { return hp; } }
+    public int Hp { get { return hp; } set { hp = value; } }
+
 
     [SerializeField]
 
